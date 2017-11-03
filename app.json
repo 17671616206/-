@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/marry/marry",
+    "pages/handinfo/handinfo",
+    "pages/secondhand/secondhand",
+    "pages/tongcheng/tongcheng",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FC6C49",
+    "navigationBarTitleText": "志汇微城市",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F2F2F2"
+  }
+}

@@ -1,0 +1,203 @@
+<!--pages/tongcheng/tongcheng.wxml-->
+<!-- 首页轮播图开始 -->
+<view class="body">
+<view class='banner'>
+<view class="swiper-container">
+        <swiper autoplay="auto" interval="5000" duration="500" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper">
+          <block wx:for="{{slider}}" wx:key="unique">
+            <swiper-item>
+              <image mode="aspectFill" src="{{item.picUrl}}" class="img"></image>
+            </swiper-item>
+          </block>
+        </swiper>
+
+        <view class="dots">
+          <block wx:for="{{slider}}" wx:key="unique">
+            <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+          </block>
+        </view>
+</view> 
+</view>
+</view>
+<!-- 首页轮播图结束 -->
+<!-- 天气部分开始 -->
+<view class='weathernav'>
+    <image class='weathericon' src='../image/天气.png' mode='scaleToFill'></image>
+    <view class='weather'> 
+        <view class='weatherinfo'>武汉市 19 ~ 16℃ 阵雨转阴</view>
+        <!-- </br> -->
+        <view class='weathertime'>2017-10-30</view>
+    </view>
+    <button>签到有礼</button>
+</view>
+<!-- 天气部分结束 -->
+<!-- 导航模块开始 -->
+<view class='nav'>
+    <view class='nav-mode'>
+        <image mode='scaleToFill' src='../image/房产.png'></image>掌上信息 
+    </view>
+    <view class='nav-mode'>
+       <image mode='scaleToFill' src='../image/闲置.png'></image>二手闲置
+    </view>
+    <view class='nav-mode'>
+       <image mode='scaleToFill' src='../image/秒杀.png'></image>今日秒杀
+    </view>
+    <view class='nav-mode'>
+       <image mode='scaleToFill' src='../image/福利.png'></image>抢福利
+    </view>
+      <view class='nav-mode'>
+       <image mode='scaleToFill' src='../image/剪刀.png'></image>天天减价
+    </view>
+    <view class='nav-mode'>
+       <image mode='scaleToFill' src='../image/活动.png'></image>同程活动
+    </view>
+    <view class='nav-mode'>
+       <image mode='scaleToFill' src='../image/商城.png'></image>同程商城
+    </view> 
+     <view class='nav-mode'>
+       <image mode='scaleToFill' src='../image/本地购物.png'></image>本地圈
+    </view>  
+</view>
+<!-- 导航模块结束 -->
+<view class='ad'>
+    <image mode='scaleToFill'  class='ad-icon' src='../image/广播.png'></image>
+    <view class='adinfo'>志汇同城小程序独家代理全国火热加盟中...</view>
+</view>
+<!-- 商家入驻开始 -->
+<view class='market'>
+    <view class='markettitle'>
+    入驻商家
+    <view class='moremarket'>更多 ></view>
+    </view>
+    <!-- 商家轮播图开始 -->
+         <scroll-view class="marketlist" scroll-x="true" scroll-into-view="{{toView}}">
+         <view class="marketlist_wai"> 
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+            <view>志汇微同城</view>
+          </view>
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+            <view>志汇微同城</view>
+          </view>
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+            <view>志汇微同城</view>
+          </view>
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+            <view>志汇微同城</view>
+          </view>
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+            <view>志汇微同城</view>
+          </view>
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+            <view>志汇微同城</view>
+          </view>
+         </view> 
+    </scroll-view> 
+    <!-- 商家轮播图结束 -->
+</view>
+<!-- 商家入驻结束 -->
+<!-- 二级导航开始 -->
+<!-- <view class='nav-two'> -->
+    <view class='listss'>热门推荐1</view>
+  <scroll-view class="nav-two" scroll-x="true" scroll-into-view="{{toView}}">
+  <view class="uls">
+    <view class="lists">热门推荐</view>
+    <view class="lists">热门推荐</view>
+    <view class="lists">热门推荐</view>
+    <view class="lists">热门推荐</view>
+    <view class="lists">热门推荐</view>
+    <view class="lists">热门推荐</view>
+    <view class="lists">热门推荐</view>
+    <view class="lists">热门推荐</view>
+    <view class="lists">热门推荐</view>
+    <view class="lists">热门推荐</view>
+    <view class="lists">热门推荐</view>
+    </view>
+  </scroll-view>
+<!-- </view> -->
+<!-- 二级导航结束 -->
+<!-- 商家详情开始 -->
+<view class='markets'>
+    <view class='marketinfo'>
+    <image src='../image/comment.png' class='market-logo'></image>
+    <view class='market-title'>王王王王王王王</view>
+    <button class='top'>置顶</button>
+    <button class='serve'>商务服务</button>
+    <image class='tel' src='../image/tel.png'></image>
+    </view>
+    <view class='marketintro'>随身时间发克拉打扫房间就开了第三方价格，尽快答复看的视频飞机票抖擞房价破付款！我解放牌哦就是钙看破大浮空的手帕付款坡开发破案首付款教的方式都是风景迫使.....</view>
+    <view class='marketimg'>
+    <image src='../image/comment.png'></image>
+    <image src='../image/comment.png'></image>
+    <image src='../image/comment.png'></image>
+    <image src='../image/comment.png'></image>
+    </view>
+    <view class='view'>
+    <view class='viewtime'>16小时前发布</view>
+    <view class='more'>查看详情 >></view>
+    <view class='kuang'></view>
+
+    <view class='viewnum'>
+    <image src='../image/view.png' class='views'></image>
+    <view class='viewsnum'>888</view>人浏览
+    <image src='../image/zan.png' class='zan'></image>
+    <view class='zannum'>888</view>人点赞
+    </view>
+    </view>
+</view>
+<!-- 商家详情结束 -->
+
+<view class='markets'>
+    <view class='marketinfo'>
+    <image src='../image/comment.png' class='market-logo'></image>
+    <view class='market-title'>王王王王王王王</view>
+    <button class='top'>置顶</button>
+    <button class='serve'>商务服务</button>
+    <image class='tel' src='../image/tel.png'></image>
+    </view>
+    <view class='marketintro'>随身时间发克拉打扫房间就开了第三方价格，尽快答复看的视频飞机票抖擞房价破付款！我解放牌哦就是钙看破大浮空的手帕付款坡开发破案首付款教的方式都是风景迫使.....</view>
+    <view class='marketimg'>
+    <image src='../image/comment.png'></image>
+    <image src='../image/comment.png'></image>
+    <image src='../image/comment.png'></image>
+    <image src='../image/comment.png'></image>
+    </view>
+    <view class='view'>
+    <view class='viewtime'>16小时前发布</view>
+    <view class='more'>查看详情 >></view>
+    <view class='kuang'></view>
+
+    <view class='viewnum'>
+    <image src='../image/view.png' class='views'></image>
+    <view class='viewsnum'>888</view>人浏览
+    <image src='../image/zan.png' class='zan'></image>
+    <view class='zannum'>888</view>人点赞
+    </view>
+    </view>
+</view>
+
+<!-- 底部导航栏 -->
+<view class='tab-space'></view>
+<view class='tab'>
+    <view>
+    <image src='../image/home.png'></image>
+    <view>首页</view>
+    </view> 
+    <view>
+    <image src='../image/dianpu.png'></image><view>商家</view>
+    </view> 
+    <view>
+    <image src='../image/send.png'></image><view>发布</view>
+    </view> 
+    <view>
+    <image src='../image/bag.png'></image><view>红包</view>
+    </view> 
+    <view>
+    <image src='../image/wode.png'></image><view>我的</view>
+    </view> 
+</view>

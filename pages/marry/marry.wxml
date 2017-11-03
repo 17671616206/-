@@ -1,0 +1,82 @@
+<!--pages/marry/marry.wxml-->
+<!-- <view class="marry">
+  <scroll-view scroll-x="true" style="padding:0rpx 30rpx;">  
+      <view class="uploadWrap" scroll-x="true">
+        <block wx:for="{{slider}}" wx:key="unique">  
+            <view class="upload_Item">  
+              <image class="upload_Item_img"  src="{{item.picUrl}}"></image>  
+            </view>
+        </block>
+      </view>
+  </scroll-view>
+</view>  -->
+<view class="font">
+  <view class="search">
+    <input type="text" class="search_inp" placeholder="后台可自定义" placeholder-style="color:#999;"/>
+    <image class="search_img" src="../image/sousuo@3x.png"></image>
+  </view>
+  <!--字体轮播开始  -->
+  <view class="marry">
+    <scroll-view scroll-x="true" style="padding-right:30rpx;">  
+        <view class="luntext weui-navbar" scroll-x="true">
+          <block wx:for="{{luntext}}" wx:key="*this">
+            <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">  
+              <view class="luntext_Item_text weui-navbar__title">{{item.ctext}}</view>
+              <view id="{{index}}" class="zheline {{activeIndex == index ? 'block' : ''}}">ni</view>            
+            </view>
+            
+          </block>
+        </view>
+    </scroll-view>
+  </view>
+  <!--字体轮播结束  -->
+
+  <view wx:for="{{luntext}}" wx:key="*this">
+    <view class="weui-tab__content content" hidden="{{activeIndex != index}}">
+      <!--上面部分开始  -->
+      <view class="content_top">
+        <view class="content_left">
+            <image src="{{item.img}}" class="content_img"></image>
+            <view class="content_zhong">
+              <view class="content_name">同城系统客服-凡凡系统客服</view>
+              <view class="content_text">
+                <view class="content_zheng">{{item.con}}</view>
+                <image src="../image/hongbao.png" class="hongbao"></image>
+                <view class="content_status">已结束...</view>
+              </view>
+            </view>
+        </view>
+        <image src="../image/dianhua.png" class="content_right"></image>
+      </view>
+      <!-- 上面部分结束   -->
+
+      <!--文字部分  -->
+      <view class="content_wen">本文档将带你一步步创建完成一个微信小程序，并可以在手机上体验该小程序的实际效果。
+      这个小程序的首页将会显示欢迎语以及当前用户的微信头像，点击头像，可以在新开的页面中查看当前小程序的启动日志。</view>
+
+      <!--图片部分  -->
+      <view class="content_picture">
+        <image src="{{item.img}}"></image>
+        <image src="{{item.img}}"></image>
+        <image src="{{item.img}}"></image>
+      </view>
+
+      <view class="content_chakan">
+        <view class="content_info">16小时前发布</view>
+        <view class="content_info2">查看详情>></view>
+      </view>
+
+      <view class="content_liulan">
+        <image src="../image/liulan.png" class="eye"></image>
+        <view class="content_num">887</view>
+        <view class="content_ren">人浏览</view>
+        <image src="../image/zan.png" class="zan"></image>
+        <view class="content_num">2</view>
+        <view class="content_ren">人点赞</view>
+        <view class="kuang"></view>
+      </view>
+    </view>
+  </view>
+
+</view>
+
