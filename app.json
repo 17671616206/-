@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/seller/seller",
     "pages/marry/marry",
     "pages/handinfo/handinfo",
     "pages/secondhand/secondhand",

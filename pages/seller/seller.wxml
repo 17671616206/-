@@ -1,0 +1,150 @@
+<!--pages/seller/seller.wxml-->
+<!-- 首页轮播图开始 -->
+<view class="body">
+<view class='banner'>
+<view class="swiper-container">
+        <swiper autoplay="auto" interval="5000" duration="500" current="{{swiperCurrent}}" bindchange="swiperChange" class="swiper">
+          <block wx:for="{{slider}}" wx:key="unique">
+            <swiper-item>
+              <image mode="aspectFill" src="{{item.picUrl}}" class="img"></image>
+            </swiper-item>
+          </block>
+        </swiper>
+
+        <view class="dots">
+          <block wx:for="{{slider}}" wx:key="unique">
+            <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+          </block>
+        </view>
+</view> 
+</view>
+</view>
+<!-- 首页轮播图结束 -->
+<!-- 搜索模块开始 -->
+<view class='searchbox'>
+  <input class='input' placeholder='请输入您要查询的关键词'></input><button class='search'>搜索</button>
+</view>
+
+<!-- 搜索模块结束 -->
+<view class='ad'>
+    <image mode='scaleToFill'  class='ad-icon' src='../image/广播.png'></image>
+    <view class='adinfo'>志汇同城小程序独家代理全国火热加盟中...</view>
+</view>
+
+<!-- 导航模块开始 -->
+  <view class='navs'></view>
+
+<!-- 导航模块结束 -->
+
+
+<!-- 我要入驻开始 -->
+
+<view class='join'>
+    <image class='jion-img' src='../image/join.png'></image>
+    <view class='jion-one'>• 恭喜【<text class='join-name'>黑猫</text>】入驻</view>
+    <view class='jion-two'>•恭喜【<text class='join-name'>汽车用品</text>】入驻</view>
+    <view class='jionnow'>我要入驻</view>
+
+</view>
+
+<!-- 我要入驻结束 -->
+
+<!-- 热门模块开始 -->
+<view class='nav'>
+<view>热门</view>
+<view>新闻</view>
+<view class='actives'>附近</view>
+</view>
+<!-- ----------------------------------------------- -->
+<view class='sellers'>
+<image src='../image/sellers.png' class='sellers-img'></image>
+<text class='sellersname'>懒洋洋</text>
+<text class='compone'>今日可使用权益卡</text>
+<view class='starbox'>
+    <image class='star' src='../image/star.png'></image>
+    <image class='star' src='../image/star.png'></image>
+    <image class='star' src='../image/star.png'></image>
+    <image class='star' src='../image/star.png'></image>
+    <image class='star' src='../image/star.png'></image>
+
+</view>
+<text class='hot'>人气：888</text>
+<image class='telephone' src='../image/telephone.png'></image>
+<text class='distance'>16.67KM</text>
+
+</view>
+
+<!-- 热门模块结束 -->
+<!-- 热门模块开始 -->
+<view class='sellers'>
+<image src='../image/sellers.png' class='sellers-img'></image>
+<text class='sellersname'>懒洋洋</text>
+<text class='compone'>今日可使用权益卡</text>
+<view class='starbox'>
+    <image class='star' src='../image/star.png'></image>
+    <image class='star' src='../image/star.png'></image>
+    <image class='star' src='../image/star.png'></image>
+    <image class='star' src='../image/star.png'></image>
+    <image class='star' src='../image/star.png'></image>
+
+</view>
+<text class='hot'>人气：888</text>
+<image class='telephone' src='../image/telephone.png'></image>
+<text class='distance'>16.67KM</text>
+
+</view>
+
+<!-- 热门模块结束 -->
+<!-- 热门模块开始 -->
+<view class='sellers'>
+<image src='../image/sellers.png' class='sellers-img'></image>
+<text class='sellersname'>懒洋洋</text>
+<text class='compone'>今日可使用权益卡</text>
+<view class='starbox'>
+    <image class='star' src='../image/star.png'></image>
+    <image class='star' src='../image/star.png'></image>
+    <image class='star' src='../image/star.png'></image>
+    <image class='star' src='../image/star.png'></image>
+    <image class='star' src='../image/star.png'></image>
+
+</view>
+<text class='hot'>人气：888</text>
+<image class='telephone' src='../image/telephone.png'></image>
+<text class='distance'>16.67KM</text>
+
+</view>
+
+<!-- 热门模块结束 -->
+<!-- 底部导航栏 -->
+<view class='tab-space'></view>
+<view class='tab'>
+    <view>
+    <image src='../image/home.png'></image>
+    <view>首页</view>
+    </view> 
+    <view>
+    <image src='../image/dianpu.png'></image><view>商家</view>
+    </view> 
+    <view>
+    <image src='../image/send.png'></image><view>发布</view>
+    </view> 
+    <view>
+    <image src='../image/bag.png'></image><view>红包</view>
+    </view> 
+    <view>
+    <image src='../image/wode.png'></image><view>我的</view>
+    </view> 
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
