@@ -1,0 +1,144 @@
+<!--pages/infodetial/infodetial.wxml-->
+<!-- 信息详情开始 -->
+<view class='infobody'>
+  <view class='userinfo'>
+   <image src='../image/comment.png' class='user-logo'></image>
+    <view class='user-title'>王王王王王王王</view>
+    <button class='top'>置顶</button>
+    <button class='serve'>二手房出售</button>
+    <view class='data'><view class='datatime'>2017--07-12</view>发布</view>
+  </view>
+<!-- -------------------------------------------------------- -->
+<view class='infodetial'>
+        <view class='ionfointro'>我解放牌哦就是钙看破大浮空的手帕付款坡开发破案首付款教的方式都是风景迫使.....<view class='imgnum'>[4图]         </view></view>
+
+
+
+<view class='viewnum'>
+    <image src='../image/view.png' class='views'></image>
+    <view class='viewsnum'>888</view>人浏览
+    <image src='../image/zan.png' class='zan'></image>
+    <view class='zannum'>888</view>人点赞
+    </view>
+</view>
+
+</view>
+
+<!-- 信息详情结束 -->
+<!--zanuserlogo轮播开始  -->
+<view class='zanbox'><view class='zanlogo'>51赞</view></view>
+         <scroll-view class="marketlist" scroll-x="true" scroll-into-view="{{toView}}">
+         <view class="marketlist_wai"> 
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+          </view>
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+          </view>
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+          </view>
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+          </view>
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+          </view>
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+          </view>
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+          </view>
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+          </view>
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+          </view>
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+          </view>
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+          </view>
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+          </view>
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+          </view>
+          <view class="marketlist_one">
+            <image src="../image/comment.png"></image>
+          </view>
+         </view> 
+    </scroll-view> 
+  <!--zanuserlogo轮播结束  -->
+
+
+  <view class='tel'>
+  
+  <view class='telphone'>
+  <text>联系电话：13333333333</text><image class='phone' src='../image/tel.png'></image>
+  </view>联系我时，请说明是在黑猫商圈上看到我的信息。
+  </view>
+
+
+<!-- 评论模块开始 -->
+
+<view class='words'>
+    <view class='words-title'>
+    <view class='words-title-left'></view>评论 <image class='words-img' src='../image/words.png'></image>
+    </view>
+<!-- 评论----------------- -->
+<view class='userwords'>
+
+  <image class='userslogo' src='../image/liwu.png'></image>
+  <view class='username'>大哥</view>
+  <view class='repeat'>回复</view>
+  <view class='repeattime'>07-19</view>
+  <view class='wordstext'>我解放牌哦就是钙看破大浮空的手帕付款坡开发破案首付款教的方式都是风景迫使.....  <view class='kuangs'></view></view>
+ 
+
+    <view class='repeats'>
+    <view class='usernames'>麦子</view>回复<view class='usernames'>麦子</view>：还不错
+
+
+
+    </view>
+
+</view>
+
+
+
+
+
+<!-- 评论----------------- -->
+</view>
+
+
+<!-- 评论模块结束 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
